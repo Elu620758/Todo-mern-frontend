@@ -142,7 +142,7 @@ export default function Todo() {
                         todos.map((item) => <li className="list-group-item text-light bg-success d-flex justify-content-between align-items-center my-2">
                             <div className="d-flex flex-column me-2">
                                 {
-                                    editId === -1 || editId !=== item._id ? <>
+                                    editId === -1 || editId !== item._id ? <>
                                         <span className="fw-bold">{item.title}</span>
                                         <span>{item.description}</span>
                                     </> : <>
